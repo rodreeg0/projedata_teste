@@ -20,6 +20,7 @@ public class Funcionario extends Pessoa {
     
 
     public Funcionario() {
+        // Default constructor
     }
 
     public Funcionario(Long cpf,String nome, LocalDate dataNascimento, BigDecimal salario, String funcao) {

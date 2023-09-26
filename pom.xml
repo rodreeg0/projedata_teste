@@ -12,10 +12,16 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.11.0</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>compile</goal>
+                    </goals>
+                </execution>
+            </executions>
             <configuration>
-                <source>1.8</source> <!-- Change this to match your JDK version -->
-                <target>1.8</target> <!-- Change this to match your JDK version -->
+                <source>1.8</source>
+                <target>1.8</target>
             </configuration>
         </plugin>
         <plugin>
@@ -44,18 +50,15 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.5.6.Final</version>
-            
-        </dependency>
-
-        <!-- MySQL JDBC Driver -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.26</version>
-        </dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.5.6.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.26</version>
+    </dependency>
 <!-- 
         JPA (Java Persistence API) -->
         <!-- <dependency>
