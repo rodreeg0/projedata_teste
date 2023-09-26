@@ -54,7 +54,7 @@ Siga estas etapas para executar o projeto:
       ```bash
       mvn exec:java@run-principal
       ```
-      ou
+      ou caso não queira rodar com o banco de dados
       ```bash
       mvn exec:java@run-principalSimples
       ```
