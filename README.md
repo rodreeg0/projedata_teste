@@ -47,14 +47,14 @@ Siga estas etapas para executar o projeto:
       <property name="hibernate.connection.username">seu_usuario</property>
       <property name="hibernate.connection.password">sua_senha</property>
       ```
-   #### 4.4. Salve o arquivo.
+   #### 4.4. Salve o arquivo `hibernate.cfg.xml`.
 
-   #### 4.5. Execute o arquivo.
+   #### 4.5. Execute a classe principal.
 
       ```bash
       mvn exec:java@run-principal
       ```
-      ou caso não queira rodar com o banco de dados
+      ou caso não queira rodar com o banco de dados:
       ```bash
       mvn exec:java@run-principalSimples
       ```
