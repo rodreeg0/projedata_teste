@@ -52,6 +52,11 @@ Siga estas etapas para executar o projeto:
    #### 4.5. Execute o arquivo.
 
       ```bash
-      mvn exec:java
+      mvn exec:java@run-principal
       ```
+      ou
+      ```bash
+      mvn exec:java@run-principalSimples
+      ```
+
 

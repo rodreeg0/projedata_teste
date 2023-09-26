@@ -31,14 +31,25 @@
             <version>3.0.0</version> <!-- Use the latest version -->
             <executions>
                 <execution>
+                    <id>run-principal</id>
                     <goals>
                         <goal>java</goal>
                     </goals>
+                    <configuration>
+                        <mainClass>projedata_tests.Principal</mainClass> <!-- Specify your main class -->
+                    </configuration>
+                </execution>
+                <execution>
+                    <id>run-principalSimples</id>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>projedata_tests.PrincipalSimples</mainClass>
+                    </configuration>
                 </execution>
             </executions>
-            <configuration>
-                <mainClass>projedata_tests.Principal</mainClass> <!-- Specify your main class -->
-            </configuration>
+            
         </plugin>
     </plugins>
   </build>
