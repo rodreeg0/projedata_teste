@@ -36,19 +36,20 @@ Siga estas etapas para executar o projeto:
 
 4. **Execute o projeto:**
 
-   ### 4.1. Crie um banco de dados MySQL com o nome desejado (por exemplo, `projedata_teste`).
+   #### 4.1. Crie um banco de dados MySQL com o nome `projedata_teste`.
 
-   ### 4.2. Abra o arquivo `hibernate.cfg.xml` localizado na pasta `src/main/resources`.
+   #### 4.2. Abra o arquivo `hibernate.cfg.xml` localizado na pasta `src/main/resources`.
 
-   ### 4.3. Atualize as configurações do banco de dados, incluindo o URL de conexão, nome de usuário e senha no arquivo `hibernate.cfg.xml`:
+   #### 4.3. Atualize as configurações do banco de dados, incluindo o URL de conexão, nome de usuário e senha no arquivo `hibernate.cfg.xml`:
 
       ```xml
       <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/projedata_teste</property>
       <property name="hibernate.connection.username">seu_usuario</property>
       <property name="hibernate.connection.password">sua_senha</property>
-
-   ### 4.4. Salve o arquivo.
+      ```
+   #### 4.4. Salve o arquivo.
 
 ```bash
 mvn exec:java
+```
 
