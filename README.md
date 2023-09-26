@@ -11,26 +11,13 @@ Antes de começar, certifique-se de que você tenha os seguintes pré-requisitos
 - **Git:** O Git é necessário para clonar o repositório. Você pode baixá-lo em [Git](https://git-scm.com/downloads).
 - **MySQL:** Você precisa ter um servidor MySQL instalado ou acessível para criar o banco de dados.
 
-## Configuração do Banco de Dados
 
-1. Crie um banco de dados MySQL com o nome desejado (por exemplo, `projedata_teste`).
-
-2. Abra o arquivo `hibernate.cfg.xml` localizado na pasta `src/main/resources`.
-
-3. Atualize as configurações do banco de dados, incluindo o URL de conexão, nome de usuário e senha no arquivo `hibernate.cfg.xml`:
-
-   ```xml
-   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/projedata_teste</property>
-   <property name="hibernate.connection.username">seu_usuario</property>
-   <property name="hibernate.connection.password">sua_senha</property>
-
-4. Salve o arquivo.
 
 ## Execução do Projeto
 
 Siga estas etapas para executar o projeto:
 
-1. **Clone o repositório do GitHub para sua máquina local:**
+1. **Navegue até a pasta de projetos e clone o repositório do GitHub**
 
    ```bash
    git clone https://github.com/rodreeg0/projedata_teste.git
@@ -39,9 +26,8 @@ Siga estas etapas para executar o projeto:
 2. **Navegue até o diretório do projeto:**
 
    ```bash
-   cd ./nome-da-pasta
+   cd ./projedata_teste
 
-### Mude o nome da pasta para o respectivo diretório criado
 
 3. **Compile o projeto usando o Maven:**
 
@@ -50,6 +36,19 @@ Siga estas etapas para executar o projeto:
 
 4. **Execute o projeto:**
 
-   ```bash
-   mvn exec:java
+   ### 4.1. Crie um banco de dados MySQL com o nome desejado (por exemplo, `projedata_teste`).
+
+   ### 4.2. Abra o arquivo `hibernate.cfg.xml` localizado na pasta `src/main/resources`.
+
+   ### 4.3. Atualize as configurações do banco de dados, incluindo o URL de conexão, nome de usuário e senha no arquivo `hibernate.cfg.xml`:
+
+      ```xml
+      <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/projedata_teste</property>
+      <property name="hibernate.connection.username">seu_usuario</property>
+      <property name="hibernate.connection.password">sua_senha</property>
+
+   ### 4.4. Salve o arquivo.
+
+```bash
+mvn exec:java
 
