@@ -49,7 +49,9 @@ Siga estas etapas para executar o projeto:
       ```
    #### 4.4. Salve o arquivo.
 
-```bash
-mvn exec:java
-```
+   #### 4.5. Execute o arquivo.
+
+      ```bash
+      mvn exec:java
+      ```
 
